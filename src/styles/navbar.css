@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 12rem;
+}
+
+a,
+li {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+
+a:hover:after {
+    width: 100%;
+    background: white;
+}
+
+
+
+.ul-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    max-width: 150px;
+}
