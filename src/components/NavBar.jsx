@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/images/logo.svg'
 import '../styles/navbar.css'
 import CartWidget from './CartWidget'
@@ -9,9 +10,18 @@ const NavBar = () => {
             <nav>
                 <ul className='ul-nav'>
                     <CartWidget />
-                    <li><a href="#">Motherboards</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Memorias</a></li>
+                    <Link to='/' className='an'>
+                        Inicio
+                    </Link>
+                    <NavLink to='/category/monitor'>
+                        Monitores
+                    </NavLink>
+                    <NavLink to='/category/GPU'>
+                        GPU
+                    </NavLink>
+                    <NavLink to='/category/Notebook'>
+                        Notebook
+                    </NavLink>
                 </ul>
             </nav>
         </header>

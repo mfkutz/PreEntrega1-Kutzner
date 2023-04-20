@@ -1,0 +1,13 @@
+.container{
+    color: white;
+    
+}
+
+.back{
+    background-color: red;
+    padding: 5px 10px;
+}
+
+.numberOfProducts{
+    font-size: 20px;
+}
