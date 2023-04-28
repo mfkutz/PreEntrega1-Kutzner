@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { myPromise } from '../utils/myPromise'
 import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
+import { BeatLoader } from 'react-spinners'
 
 const ItemListContainer = () => {
 
@@ -29,7 +30,7 @@ const ItemListContainer = () => {
     return (
         <div className='container-prod'>
             {isLoading ?
-                <h4>Loading...</h4>
+                <BeatLoader color="#36d7b7" />
                 :
                 <ItemList products={productos} />
             }

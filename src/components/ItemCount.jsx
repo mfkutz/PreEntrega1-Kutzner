@@ -15,6 +15,7 @@ const ItemCount = ({ initial, inStock, addToCart }) => {
         }
     }
 
+    /* console.log(typeof qOfItem); */
     return (
         <div className='count-container'>
             <div className="num">

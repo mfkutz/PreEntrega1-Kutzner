@@ -24,7 +24,7 @@ export const myPromise = () => {
         setTimeout(() => {
             res(productos)
             // rej('Ups....algo salió mal')
-        }, 1000)
+        }, 1500)
     })
 }
 

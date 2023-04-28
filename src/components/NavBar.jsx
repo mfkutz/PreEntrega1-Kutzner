@@ -9,19 +9,21 @@ const NavBar = () => {
             <img src={logo} className='logo' />
             <nav>
                 <ul className='ul-nav'>
-                    <CartWidget />
+                    <Link to='/cart'>
+                        <CartWidget />
+                    </Link>
                     <Link to='/' className='an'>
                         Inicio
                     </Link>
-                    <NavLink to='/category/monitor'>
+                    <Link to='/category/monitor'>
                         Monitores
-                    </NavLink>
-                    <NavLink to='/category/GPU'>
+                    </Link>
+                    <Link to='/category/GPU'>
                         GPU
-                    </NavLink>
-                    <NavLink to='/category/Notebook'>
+                    </Link>
+                    <Link to='/category/Notebook'>
                         Notebook
-                    </NavLink>
+                    </Link>
                 </ul>
             </nav>
         </header>

@@ -1,9 +1,16 @@
+import { useContext } from 'react'
+import { CartContext } from "./CartContext"
 import cart from '../assets/images/icon-cart.svg'
+
+
+
 const CartWidget = () => {
+
+    const { getTotalProductos } = useContext(CartContext)
     return (
         <div>
             <img src={cart} alt="carrito" />
-            <span>0</span>
+            <span>{getTotalProductos()}</span>
         </div>
     )
 }

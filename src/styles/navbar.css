@@ -13,20 +13,20 @@ li {
     text-decoration: none;
 }
 
-a:after {
+/* a:after {
     content: "";
     display: block;
     margin: auto;
     height: 2px;
     width: 0px;
     transition: all .8s;
-}
+} */
 
-a:hover:after {
+/* a:hover:after {
     width: 100%;
     background: white;
 }
-
+ */
 
 
 .ul-nav {

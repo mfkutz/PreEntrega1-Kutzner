@@ -6,7 +6,7 @@ function Item({ id, product, description, price, image, category, stock }) {
     <div key={id} className='card'>
         <img src={image} className='card-img' alt='imagen'/>
       <div className="card-body">
-        <h3>Producto: {product}</h3>
+        <h3 className='h3-title'>{product}</h3>
         <label>Descripcion: {description}</label>
         <label>Categoria: {category}</label>
         <label>Precio:$ {price}</label>
@@ -14,7 +14,7 @@ function Item({ id, product, description, price, image, category, stock }) {
       </div>
       <div className='card-footer'>
         <Link to={`/detail/${id}`} className='detalle-style'>
-          detalle
+          Detalle
         </Link>
       </div>
     </div>
