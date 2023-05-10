@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import '../styles/item.css'
+import { useState } from 'react';
 
 function Item({ id, product, description, price, image, category, stock }) {
+
+ /*  console.log('Item'); */
+ /* console.log(stock); */
   return (
     <div key={id} className='card'>
-        <img src={image} className='card-img' alt='imagen'/>
+      <img src={image} className='card-img' alt='imagen' />
       <div className="card-body">
         <h3 className='h3-title'>{product}</h3>
         <label>Descripcion: {description}</label>
@@ -18,7 +22,7 @@ function Item({ id, product, description, price, image, category, stock }) {
         </Link>
       </div>
     </div>
-  );
+  )
 }
 
-export default Item;
+export default Item

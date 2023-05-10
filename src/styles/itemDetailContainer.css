@@ -2,4 +2,11 @@
     
     display: flex;
     justify-content: center;
+    background: hsl(218, 28%, 13%)
+}
+
+.container-spin {
+    display: flex;
+    justify-content: center;
+    
 }

@@ -7,6 +7,9 @@ import NotFound404 from './components/NotFound404'
 import { CartContextProvider } from './components/CartContext'
 import CartContainer from './components/CartContainer'
 import CartWidget from './components/CartWidget'
+import TecnicaDeRendering from './components/TecnicaDeRendering'
+import EmptyCart from './components/EmptyCart'
+
 
 
 function App() {
@@ -29,6 +32,8 @@ function App() {
           <Route path='/cart' element={<CartContainer />} />
           <Route path='*' element={<NotFound404 />} />
         </Routes>
+        {/* <TecnicaDeRendering /> */}
+    
       </Router>
     </CartContextProvider>
 

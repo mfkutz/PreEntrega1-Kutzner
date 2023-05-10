@@ -10,8 +10,8 @@ export const CartContextProvider = ({ children }) => {
 
     //precio total de la compra
     function actualizarTotal() {
-        const sumarTotal = cartList.reduce((acc, prod) => acc + prod.price * prod.cantidad, 0)
-        setTotal(sumarTotal)
+        const sumsarTotal = cartList.reduce((acc, prod) => acc + prod.price * prod.cantidad, 0)
+        setTotal(sumsarTotal)
     }
 
     //actualizo el valor total en cada cambio del carrito
@@ -21,9 +21,9 @@ export const CartContextProvider = ({ children }) => {
 
     //agrega al carrito
     const addToCart = (newProduct) => {
-        //aqui agregar logica de producto repetido aqui (posiblemente un if)
-        const existingProduct = cartList.find(product => product.id === newProduct.id);
-        console.log(existingProduct);
+        
+        const existingProduct = cartList.find(product => product.id === newProduct.id)
+        
         if (existingProduct) {
             const updatedCart = cartList.map(product => {
                 if (product.id === existingProduct.id) {
@@ -49,7 +49,6 @@ export const CartContextProvider = ({ children }) => {
     function eliminarProducto(id) {
         const nuevoCartList = cartList.filter((producto) => producto.id !== id)
         setCartList(nuevoCartList)
-        console.log('producto eliminado')
     }
 
     //cantidad total de productos
@@ -73,5 +72,4 @@ export const CartContextProvider = ({ children }) => {
         </CartContext.Provider>
     )
 }
-
 

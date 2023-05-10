@@ -1,10 +1,12 @@
-import Item from './Item';
+import Item from './Item'
 import '../styles/itemlist.css'
 
 function ItemList({ products }) {
+
+  /* console.log('ItemList'); */
   return (
     <div className='nn'>
-      {products.map(({ id, product, description, price, image, category,stock }) => (
+      {products.map(({ id, product, description, price, image, category, stock }) => (
         <Item
           key={id}
           id={id}
@@ -17,7 +19,7 @@ function ItemList({ products }) {
         />
       ))}
     </div>
-  );
+  )
 }
 
-export default ItemList;
+export default ItemList
